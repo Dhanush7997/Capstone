@@ -35,7 +35,7 @@ const userRoutes = require('./routes/userRoutes')
 app.use("/", productRoutes)
 app.use("/", userRoutes)
 //create port
-let port = 8080
+let port =Process.env.PORT || 8080
 //assign port no
 app.listen(port, () => {
 console.log('Server listening port no:- ', port)
